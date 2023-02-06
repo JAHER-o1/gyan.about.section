@@ -1,0 +1,241 @@
+/*
+Theme Info
+=====================
+Theme Name         :Gyan.
+Version            :1.0
+Author Name        :Creative It Institute
+Frontend Developer : Md Sajal Sarder
+Redesigned By      : Md Zahid Hossain
+
+
+Table of Content
+=====================
+1)Common Css
+2)Top Menu
+3)Nav Bar
+4)Banner Section
+5)Support Section
+6)About Section
+7)Course Section
+8)Events Section
+9)Testimonial Section
+10)Teachers Section
+11)Blog Section
+12)Footer Top section
+13)Footer Slider Section
+14)Footer Section
+15)
+16)
+17)
+18)
+19)
+20)
+21)
+22)
+*/
+
+/* Common Css Start */
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arimo', sans-serif;
+	color: var(--main-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+button,
+a:focus {
+	box-shadow: none;
+	outline: 0;
+}
+
+:root {
+	--main-color: #212529;
+	--main-hlt-color: #fbaa33;
+}
+
+.section_info h2 {
+	font-size: 32px;
+	color: #2d3e50;
+	padding-bottom: 22px;
+}
+
+.section_info p {
+	font-size: 14px;
+	color: #666666;
+}
+
+/* Common Css End */
+
+/* Top Menu Css Start */
+#top_menu {
+	background-color: #2D3E50;
+}
+
+.top_menu_left ul li {
+	display: inline-block !important;
+}
+
+.top_menu_left ul li a {
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px 0;
+	margin-right: 20px;
+}
+
+.top_menu_left ul li a i {
+	padding-right: 5px;
+}
+
+.top_menu_right ul {
+	float: right;
+}
+
+.top_menu_right ul li {
+	display: inline-block;
+}
+
+.top_menu_right ul li a {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px 0;
+	margin-left: 20px;
+}
+
+/* Top Menu Css End */
+
+/* About Section Css Start */
+#about {
+	padding: 100px 0 70px;
+}
+
+#about .section_info {
+	margin-bottom: 63px;
+}
+
+.about_slider_box,
+.about_video_box {
+	position: relative;
+}
+
+.about_slider_box::before,
+.about_slider_box::after,
+.about_video_box::before,
+.about_video_box::after {
+	content: '';
+	position: absolute;
+	width: 370px;
+	height: 3px;
+	background-size: cover;
+}
+
+.about_video_box::before,
+.about_slider_box::before {
+	top: -10px;
+	left: 0;
+	background-image: url(../img/aboutSliderBorderBottom.png);
+	background-position: right;
+}
+
+.about_slider_box::after,
+.about_video_box::after {
+	bottom: -10px;
+	right: 0;
+	background-image: url(../img/aboutSliderBorderTop.png);
+}
+
+.about_slider_item,
+.about_video {
+	clip-path: polygon(20% 0%, 100% 0, 80% 100%, 0% 100%);
+}
+.about_slider_item img{
+	width: 100%;
+}
+
+.about_slider_dots {
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	transform: translateX(-50%);
+	line-height: 1px;
+}
+
+.about_slider_dots li {
+	display: inline-block;
+}
+
+.about_slider_dots li button {
+	border: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid var(--main-color);
+	margin-right: 8px;
+	background: none;
+	font-size: 1px;
+	color: transparent;
+}
+
+.about_slider_dots li.slick-active button {
+	background-color: var(--main-hlt-color);
+	border-color: var(--main-hlt-color);
+}
+
+.about_content p {
+	font-size: 14px;
+	color: #444444;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.about_btn a {
+	font-size: 20px;
+	padding: 12px 18px;
+	background: var(--main-color);
+	border: 1px solid;
+	text-decoration: none;
+	color: white;
+	border-radius: 5px;
+	margin-right: 20px;
+	margin-top: 25px;
+	display: inline-block;
+	transition: all linear .05s;
+	-webkit-transition: all linear .5s;
+	-moz-transition: all linear .5s;
+	-o-transition: all linear .5s;
+	-ms-transition: all linear .5s;
+}
+
+.about_btn a:hover {
+	background-color: var(--main-hlt-color);
+}
+
+/* About Section Css End */

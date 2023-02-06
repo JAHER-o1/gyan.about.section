@@ -1,0 +1,10 @@
+/* About Section Responsive Css Start */
+   #about {
+      padding: 70px 0;
+   }
+
+   .about_content {
+      margin-top: 25px;
+   }
+
+   /* About Section Responsive Css End */
